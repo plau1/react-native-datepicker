@@ -446,11 +446,9 @@ class DatePicker extends Component {
 		supportedOrientations = SUPPORTED_ORIENTATIONS_WINDOWS;
 	}
 
-	let newStyle = {...style, borderWidth:1, borderColor: '#000'}
-
     return (
       <TouchableComponent
-        style={[Style.dateTouch, newStyle]}
+        style={[Style.dateTouch, style]}
         underlayColor={'transparent'}
         onPress={this.onPressDate}
         testID={testID}
